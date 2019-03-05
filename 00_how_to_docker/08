@@ -1,0 +1,2 @@
+docker run --name coco --rm -it alpine /bin/sh
+#docker stats

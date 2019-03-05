@@ -1,0 +1,3 @@
+docker exec spawning-pool env
+#exec Run a command in a running container
+#env write env variable

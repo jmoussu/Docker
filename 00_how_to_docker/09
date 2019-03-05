@@ -1,0 +1,6 @@
+# docker run --name madeb --rm -it debian /bin/sh
+# Commande pour connaître la version d'une Debian : `cat /etc/issue`
+apt-get update -y
+apt-get upgrade -y
+apt-get install git -y
+apt-get install gcc -y
