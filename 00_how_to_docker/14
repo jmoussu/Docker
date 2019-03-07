@@ -1,0 +1,6 @@
+#Links allow containers to discover each other and securely transfer information about one container to another container. 
+# When you set up a link, you create a conduit between a source container and a recipient container. The recipient can then access select data about the source. 
+# To create a link, you use the --link flag. First, create a new container, this time one containing a database.
+#--link <name or id>:alias
+docker run -d --name lair -p 8080:80 --link spawning-pool:mysql wordpress
+#test: http://192.168.99.100:8080/ DONT FORGET TO CHEK IP ??

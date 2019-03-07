@@ -1,0 +1,3 @@
+docker ps
+#docker ps --all pour voir aussi les inactif
+#je prefere docker stats --all ou docker stats -a pour avoir le te;ps reèl

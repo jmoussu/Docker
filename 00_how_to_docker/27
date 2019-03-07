@@ -1,0 +1,4 @@
+#docker service logs engineering-bay -f (2 service on en veux que 1)
+docker service logs $(docker service ps engineering-bay -f "name=engineering-bay.1" -q) -f
+#--quiet , -q		Only display task IDs
+#--filter , -f		Filter output based on conditions provided

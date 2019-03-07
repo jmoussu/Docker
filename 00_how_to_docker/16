@@ -1,0 +1,2 @@
+docker logs spawning-pool -f
+#go on http://192.168.99.100:8081/ and try to fail mdp

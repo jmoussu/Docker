@@ -1,0 +1,4 @@
+#rmi = Remove one or more images
+#--force , -f		Force removal of the image
+docker rmi -f $(docker images -a -q)
+#-q only id

@@ -1,4 +1,11 @@
 #-d		Run container in background and print container ID
-#Les variables d’environnements doivent avoir un nom que l’image MySQL utilisera par défaut, il suffit de changer leurs valeurs avec le flag -e :
-#La commande -v $(pwd):/app permet de monter un VOLUME entre le dossier courant sur notre host et le dossier /app dans notre container.
-docker run -d --restart on-failure -v hatchery:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings --name spawning-pool mysql
+#Les variables d’environnements doivent avoir un nom que l’image MySQL utilisera par défaut, 
+#il suffit de changer leurs valeurs avec le flag -e :
+
+#La commande -v $(pwd):/app permet de monter un VOLUME entre le dossier courant sur notre host 
+#et le dossier /app dans notre container.
+
+#docker pull mysql:5.7 PROBLEME DE COMPATIBILITER QUESTION 14 
+#docker images pour verifier
+
+docker run -d --restart on-failure -v hatchery:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings --name spawning-pool mysql:5.7
