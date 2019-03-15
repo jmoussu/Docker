@@ -1,0 +1,20 @@
+<% content_for :title do %>Foobar Kadigan<% end %>
+<% content_for :description do %>Website of Foobar Kadigan<% end %>
+<section>
+  <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/23316452_1727683160597262_4959971696812315646_n.jpg?_nc_cat=101&_nc_ht=scontent-cdt1-1.xx&oh=38a6c4401b965af81ddb415cd14fc573&oe=5D0DABE6">
+</section>
+<section>
+  <div class="column">
+    <h3>Hello World 42 Docker ... C'est trop long</h3>
+  </div>
+  <div class="column">
+    <div class="form-centered">
+      <%= form_with(model: @visitor) do |f| %>
+        <%= f.email_field :email, placeholder: 'Your email address...', autofocus: true %>
+        <br/>
+        <br/>
+        <%= f.submit 'Sign up for the newsletter', class: 'submit' %>
+      <% end %>
+    </div>
+  </div>
+</section>
